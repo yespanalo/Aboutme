@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <link rel="stylesheet" href="css/hobbies.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="logo">
+            <a href="index.html"><img src="images/LOGO.png" alt=""></a>
+            
+        </div>
+        <h1>Hobbies</h1>
+        <div class="container">
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+            </div>
+            <div class="testimonial">
+            <div class="slider" id="slide">
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Riding a motorcycle gives you a sense of freedom. You are in total control of the moment, you are not just riding, you are flying and there are no set limits to stop you. You can travel to any place with complete freedom. It lets you be you without anyone’s permission.</p>
+                        <h3>Riding MotorBike</h3>
+                        <p>Insp by. Valentino Rossi</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="images/biking.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>By playing basketball, you get a great full-body exercise. You will work out more muscles than just your legs. Basketball is a fast-paced game that requires physical skills, thus the development of lean muscle. The sport is dynamic and entertaining..</p>
+                        <h3>Basketball</h3>
+                        <p>Insp by. Drose</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="images/kobe.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>The guitar is a flexible instrument, whose tone and timbre are suitable for most styles of music. The guitar plays a central role in popular music, Rock, Latin, funk, jazz, and more. It has also made its way into most other styles of music as a cameo instrument.</p>
+                        <h3>Guitar</h3>
+                        <p>Insp by. Slash</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="images/guitar.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>By unlocking more nutrients through cooking, our ancestors were able to get a lot more energy out of less food, allowing them to more or less survive on three meals a day - something that our raw food-eating chimpanzee relatives would never be able to do, Curnoe explains.</p>
+                        <h3>Eating</h3>
+                        <p>Insp by. Cooking shows</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="images/eating.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+       
+    </div>
+    <script>
+        var btn = document.getElementsByClassName("btn");
+        var slide = document.getElementById("slide");
+
+        btn[0].onclick = function(){
+            slide.style.transform = "translateX(0px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[1].onclick = function(){
+            slide.style.transform = "translateX(-800px)";for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[2].onclick = function(){
+            slide.style.transform = "translateX(-1600px)";for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[3].onclick = function(){
+            slide.style.transform = "translateX(-2400px)";for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+    </script>
+</body>
+</html>

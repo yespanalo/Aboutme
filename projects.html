@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <link rel="stylesheet" href="css/hobbies.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="logo">
+            <a href="index.html"><img src="images/LOGO.png" alt=""></a>
+            
+        </div>
+        <h1>My Projects</h1>
+        <div class="container">
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+            </div>
+            <div class="testimonial">
+            <div class="slider" id="slide">
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Messenger is an instant messaging app and platform developed by Meta Platforms. Originally developed as Facebook Chat in 2008, the company revamped its messaging service in 2010, and subsequently released standalone iOS and Android apps in August 2011.</p>
+                        <h3>Messenger UI Clone</h3>
+                        <p>Insp by. Facebook Messenger</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="images/Chatapp.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Usap is prototype of translator and sign language app that teaches people of all ages how to use sign language and how to use it in conversing.</p>
+                        <h3>Usap</h3>
+                        <!-- <p>Insp by. Drose</p> -->
+                    </div>
+                    <div class="user-img">
+                        <img src="images/Usap.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Fundpad is a mobile platform application entry for DSC Loyola: HackFest2020 that aims to help most of the charitable organization to connect with people with a good heart that can help them for their mission.</p>
+                        <h3>FundPad</h3>
+                        <p>CRIM.inc</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="images/fundpad.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Google Play, also branded as the Google Play Store and formerly Android Market, is a digital distribution service operated and developed by Google. It serves as the official app store for certified devices running on the Android operating system.</p>
+                        <h3>PlayStore UI Clone</h3>
+                        <p>Insp by. Google Play Store</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="images/playstore.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+       
+    </div>
+    <script>
+        var btn = document.getElementsByClassName("btn");
+        var slide = document.getElementById("slide");
+
+        btn[0].onclick = function(){
+            slide.style.transform = "translateX(0px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[1].onclick = function(){
+            slide.style.transform = "translateX(-800px)";for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[2].onclick = function(){
+            slide.style.transform = "translateX(-1600px)";for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[3].onclick = function(){
+            slide.style.transform = "translateX(-2400px)";for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+    </script>
+</body>
+</html>

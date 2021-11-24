@@ -1,0 +1,104 @@
+body{
+    background-color: black;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    max-width: none;
+
+    .hero{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        .logo{
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            width: 2%;
+            img{
+                width: 100%;
+            }
+        }
+        .slider{
+            display: flex;
+            width: 3200px;
+            transition: 0.5s;
+            .slide-col{
+                width: 3000px;
+                height: 400px;
+                position: relative;
+
+                .user-img{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    img{
+                        height: 100%;
+                        border-radius: 30px;
+                    }
+                }
+                .user-text{
+                    background-color:yellow;
+                    width: 520px;
+                    height: 300px;
+                    position: absolute;
+                    left: 0px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    border-radius: 10px;
+                    color: #111820;
+                    padding: 45px;
+                    box-sizing: border-box;
+                    z-index: 2;
+                    p{
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: #111820;
+                    }
+                    h3{
+                        margin: 25px 0 10px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .container{
+            width: 800px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .indicator{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -50px;
+            .btn{
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                margin: 4px;
+                border-radius: 15px;
+                background-color: yellow;
+                cursor: pointer;
+            }
+            .active{
+                width: 45px;
+            }
+        }
+        .testimonial{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+    h1{
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        padding-top: 80px;
+    }
+
+}

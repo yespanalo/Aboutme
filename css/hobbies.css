@@ -1,0 +1,125 @@
+body {
+  background-color: black;
+  margin: 0%;
+  padding: 0%;
+  color: white;
+  max-width: none;
+}
+
+body .hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+body .hero .logo {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 2%;
+}
+
+body .hero .logo img {
+  width: 100%;
+}
+
+body .hero .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3200px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .hero .slider .slide-col {
+  width: 3000px;
+  height: 400px;
+  position: relative;
+}
+
+body .hero .slider .slide-col .user-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+body .hero .slider .slide-col .user-img img {
+  height: 100%;
+  border-radius: 30px;
+}
+
+body .hero .slider .slide-col .user-text {
+  background-color: yellow;
+  width: 520px;
+  height: 300px;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 10px;
+  color: #111820;
+  padding: 45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 2;
+}
+
+body .hero .slider .slide-col .user-text p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #111820;
+}
+
+body .hero .slider .slide-col .user-text h3 {
+  margin: 25px 0 10px;
+  font-weight: bold;
+}
+
+body .hero .container {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .hero .indicator {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -50px;
+}
+
+body .hero .indicator .btn {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 4px;
+  border-radius: 15px;
+  background-color: yellow;
+  cursor: pointer;
+}
+
+body .hero .indicator .active {
+  width: 45px;
+}
+
+body .hero .testimonial {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body h1 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 80px;
+}
+/*# sourceMappingURL=hobbies.css.map */

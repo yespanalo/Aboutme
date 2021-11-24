@@ -1,0 +1,84 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+body .parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .parent .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-left: 80px;
+  margin-top: 5em;
+}
+
+body .parent .left h2 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+body .parent .left p {
+  margin-top: 0px;
+  color: grey;
+  width: 95%;
+}
+
+body .parent .left button {
+  color: black;
+  font-weight: bold;
+  background-color: #fff01fea;
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+body .parent .left ul {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+body .parent .left ul li {
+  margin-right: 10px;
+}
+
+body .parent .right {
+  margin-right: 20px;
+  height: 690px;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .parent .right img {
+  width: 80%;
+}
+/*# sourceMappingURL=education.css.map */
